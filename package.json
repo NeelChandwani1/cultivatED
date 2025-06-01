@@ -1,0 +1,15 @@
+{
+  "name": "cultivated",
+  "version": "1.0.0",
+  "description": "CultivatED Website",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
