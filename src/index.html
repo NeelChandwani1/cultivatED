@@ -5,55 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark">
     <meta name="theme-color" content="#0A0A0A">
-    <title>robust.so</title>
+    <title>cultivatED - SAT Prep for Students in Underdeveloped Countries</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div class="announcement">
-        Robust raised $1.25M to support customers from raw data to decisive action.
-    </div>
+    <div class="interactive-element"></div>
     
-    <nav>
-        <div class="logo">R</div>
+    <nav id="main-nav">
+        <a href="#" class="logo">
+            <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+        </a>
         <div class="nav-links">
-            <a href="#contact">CONTACT</a>
-            <a href="#thesis">THESIS</a>
+            <a href="#about" class="nav-link">ABOUT</a>
+            <a href="#contact" class="nav-link">CONTACT</a>
         </div>
     </nav>
 
     <main>
         <section class="hero">
-            <p class="italic-label">Robust</p>
-            <h1>An applied AI lab giving companies a data edge.</h1>
-            <a href="#learn-more" class="scroll-down">Learn more ↓</a>
+            <p class="italic-label">cultivatED</p>
+            <h1>Empowering students in underdeveloped countries with free SAT prep.</h1>
+            <a href="#about" class="scroll-down">Learn more ↓</a>
         </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <div class="content-wrap">
-                <p>Data is the latest form of leverage, yet most companies fail to use it effectively, if at all.</p>
-                <p>We exist to help firms create and leverage data to their advantage. To do this, we're building a unified intelligence platform for non-technical people, powered by reasoning agents.</p>
-                <a href="#" class="italic-link">Click here to read more about our motivations.</a>
+        <section id="about" class="content-section">
+            <div class="about-map-grid">
+                <div class="about-content">
+                    <h2>About cultivatED</h2>
+                    <p>cultivatED is on a mission to democratize SAT preparation by providing free, high-quality resources to students in underdeveloped countries. We believe that access to education should not be limited by geographical or financial constraints.</p>
+                    <p>Our comprehensive program includes interactive lessons, practice tests, and personalized tutoring to help students achieve their full potential on the SAT and beyond.</p>
+                    <p>Join our mission to make SAT prep accessible to students worldwide. Interested in volunteering or partnering with us? <a href="mailto:info@cultivated.org">Get in touch</a> to learn more about opportunities to contribute to our cause.</p>
+                </div>
+                <div class="map-content">
+                    <h2>Global SAT Prep Access</h2>
+                    <div id="map-container" style="width: 100%; height: 400px;"></div>
+                    <div class="map-legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #4a7ba6"></span>
+                            <span>Limited Access</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #5f97c7"></span>
+                            <span>Below Average</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #7dbde8"></span>
+                            <span>Average</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #9fd8ff"></span>
+                            <span>Good</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #c7eeff"></span>
+                            <span>Excellent</span>
+                        </div>
+                    </div>
+                    <p class="map-note">* Data represents estimated access to quality SAT preparation resources by country</p>
+                </div>
             </div>
         </section>
 
-        <section id="hiring">
-            <h2>Hiring</h2>
+        <section id="contact" class="content-section contact-section">
             <div class="content-wrap">
-                <p>We're a talent-dense, pathologically ambitious team that takes pride in setting high standards and winning for our customers. Previously, we've researched at Cambridge University, Princeton, MIT, and the U.S. Navy.</p>
-                <p>If you value precision and potency in your work, send proof to <a href="mailto:hi@robust.so" class="email-link">hi@robust.so</a></p>
-                
-                <div class="positions">
-                    <div class="position">
-                        <h3>Model Engineering & Research</h3>
-                        <p>New York</p>
+                <div class="contact-header">
+                    <h2>Get in Touch</h2>
+                    <p class="section-subtitle">Ready to make a difference? Reach out to us</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info-wrapper">
+                        <div class="contact-info">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <h3>Email Us</h3>
+                                <a href="mailto:hello@cultivated.org" class="contact-link">hello@cultivated.org</a>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <h3>Call Us</h3>
+                                <a href="tel:+11234567890" class="contact-link">+1 (123) 456-7890</a>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <h3>Visit Us</h3>
+                                <p>123 Education Ave<br>San Francisco, CA 94103</p>
+                            </div>
+                            
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="position">
-                        <h3>Platform Engineering</h3>
+                    
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form">
+                            <h3>Send us a message</h3>
+                            <p>Have questions or want to get involved? We'd love to hear from you.</p>
+                            
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" id="name" name="name" required>
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="email" id="email" name="email" required>
+                                    <label for="email">Email Address</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <select id="inquiry" name="inquiry" required>
+                                        <option value="" disabled selected></option>
+                                        <option value="volunteer">Volunteer Opportunity</option>
+                                        <option value="partnership">Partnership Inquiry</option>
+                                        <option value="donation">Donation Question</option>
+                                        <option value="general">General Inquiry</option>
+                                    </select>
+                                    <label for="inquiry">How can we help?</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <textarea id="message" name="message" rows="4" required></textarea>
+                                    <label for="message">Your Message</label>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary">
+                                <span>Send Message</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.9/datamaps.world.min.js"></script>
+    <script src="js/interactive.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/map.js"></script>
 </body>
 </html>
