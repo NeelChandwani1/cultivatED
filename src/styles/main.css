@@ -171,16 +171,79 @@ a:hover {
     z-index: 1;
 }
 
-#map-container {
+.map-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-    margin-bottom: 2.5rem;
-    background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    position: relative;
-    z-index: 1;
-    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #0a0f1a, #141a2d);
+    margin: 2rem 0;
+    border: 1px solid rgba(79, 70, 229, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Ensure the canvas fills its container */
+.map-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+    outline: none;
+}
+
+/* Globe labels */
+.globe-label {
+    position: absolute;
+    background: rgba(15, 23, 42, 0.8);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    transition: all 0.2s ease;
+}
+
+/* Tooltip for data points */
+.globe-tooltip {
+    position: absolute;
+    background: rgba(15, 23, 42, 0.9);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    pointer-events: none;
+    z-index: 1001;
+    border: 1px solid rgba(79, 70, 229, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    transform: translate(-50%, -100%);
+    min-width: 120px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.globe-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(15, 23, 42, 0.9) transparent transparent transparent;
 }
 
 #map-container svg {
@@ -530,21 +593,151 @@ html {
 }
 
 /* Footer */
-footer {
-    border-top: 1px solid var(--border-subtle);
-    padding: 3rem 0;
+.site-footer {
+    background: rgba(15, 23, 42, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 4rem 2rem 2rem;
+    margin-top: 4rem;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.site-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(79, 70, 229, 0.5), transparent);
+}
+
+.about-content {
+max-width: 700px;
+margin: 0 auto;
+padding: 2rem;
+line-height: 1.8;
+}
+
+.about-content h3 {
+color: var(--accent);
+margin: 2rem 0 1rem;
+font-size: 1.5rem;
+}
+
+.about-list {
+margin: 1.5rem 0 1.5rem 1.5rem;
+padding: 0;
+}
+
+.about-list li {
+margin-bottom: 0.75rem;
+position: relative;
+padding-left: 1.5rem;
+}
+
+.about-list li::before {
+content: '→';
+position: absolute;
+left: 0;
+color: var(--accent);
 }
 
 .footer-content {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
     padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
 }
 
 .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo-img {
+    height: 40px;
+    width: auto;
+}
+
+.footer-logo span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-links-column h4 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.footer-links-column a {
+    display: block;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links-column a:hover {
+    color: var(--accent);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-tertiary);
+}
+
+.footer-bottom p:last-child {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.footer-logo {
+display: flex;
+align-items: center;
     display: flex;
     align-items: center;
 }
@@ -836,6 +1029,26 @@ footer {
 
 .btn-primary:active {
     transform: translateY(0);
+}
+
+.testimonial {
+    background: rgba(79, 70, 229, 0.1);
+    border-left: 3px solid var(--accent);
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.testimonial-author {
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-weight: 500;
 }
 
 /* Responsive adjustments */

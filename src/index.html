@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark">
     <meta name="theme-color" content="#0A0A0A">
-    <title>cultivatED - SAT Prep for Students in Underdeveloped Countries</title>
+    <title>CultivatED - SAT Prep for Students in Underserved Regions</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/globe.css">
 </head>
 <body>
     <div class="interactive-element"></div>
@@ -23,18 +24,33 @@
 
     <main>
         <section class="hero">
-            <p class="italic-label">cultivatED</p>
-            <h1>Empowering students in underdeveloped countries with free SAT prep.</h1>
+            <p class="italic-label">CultivatED</p>
+            <h1>Empowering students in underserved regions with SAT prep.</h1>
             <a href="#about" class="scroll-down">Learn more ↓</a>
         </section>
 
         <section id="about" class="content-section">
             <div class="about-map-grid">
                 <div class="about-content">
-                    <h2>About cultivatED</h2>
-                    <p>cultivatED is on a mission to democratize SAT preparation by providing free, high-quality resources to students in underdeveloped countries. We believe that access to education should not be limited by geographical or financial constraints.</p>
-                    <p>Our comprehensive program includes interactive lessons, practice tests, and personalized tutoring to help students achieve their full potential on the SAT and beyond.</p>
-                    <p>Join our mission to make SAT prep accessible to students worldwide. Interested in volunteering or partnering with us? <a href="mailto:info@cultivated.org">Get in touch</a> to learn more about opportunities to contribute to our cause.</p>
+                    <h2>About CultivatED</h2>
+                    <p>CultivatED is an EDTech advanced personalized learning website, dedicated to a Phase 1 focus on Standardized Test Prep, with an ethos to disseminate curated and quality education to underrepresented demographics in education, diverging from the normalized Eurocentric standard of learning which marginalizes so many students internationally. CultivatED uses a diagnostic test to gather both qualitative and quantitative data about students. By leveraging machine learning, it places students into tailored learning tropes and assigns customized test prep modules designed to meet their specific needs.</p>
+                    
+                    <h3>Who We Serve</h3>
+                    <ul class="about-list">
+                        <li>Students from low-access or resource-constrained communities</li>
+                        <li>International students facing educational barriers</li>
+                        <li>Underrepresented minorities in education</li>
+                    </ul>
+                    
+                    <h3>How It Works</h3>
+                    <ol class="about-list">
+                        <li>Take our diagnostic assessment</li>
+                        <li>Get matched with a personalized learning path</li>
+                        <li>Access customized SAT prep modules</li>
+                        <li>Track your progress and improve your scores</li>
+                    </ol>
+                    
+                    <p>Join our mission to make quality SAT prep accessible to students worldwide. <a href="#contact" class="text-link">Get in touch</a> to learn how you can contribute to our cause.</p>
                 </div>
                 <div class="map-content">
                     <h2>Global SAT Prep Access</h2>
@@ -133,8 +149,13 @@
                     
                     <div class="contact-form-wrapper">
                         <form class="contact-form">
-                            <h3>Send us a message</h3>
-                            <p>Have questions or want to get involved? We'd love to hear from you.</p>
+                            <h3>Bring CultivatED to Your Community</h3>
+                            <p>Want to bring CultivatED to your school or region? We'd love to hear from educators, partners, and volunteers who share our vision for accessible education.</p>
+                            
+                            <div class="testimonial">
+                                <p class="testimonial-text">"This is the first SAT prep that actually made sense for how I learn."</p>
+                                <p class="testimonial-author">– Student, Lagos</p>
+                            </div>
                             
                             <div class="form-group">
                                 <div class="input-group">
@@ -183,11 +204,46 @@
             </div>
         </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.9/datamaps.world.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
     <script src="js/interactive.js"></script>
     <script src="js/nav.js"></script>
-    <script src="js/map.js"></script>
+    <script src="js/globe.js"></script>
+    
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/images/logo.png" alt="CultivatED Logo" class="footer-logo-img">
+                <span>CultivatED</span>
+            </div>
+            <div class="footer-links">
+                <div class="footer-links-column">
+                    <h4>Organization</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="footer-links-column">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="footer-links-column">
+                    <h4>Connect</h4>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CultivatED. All rights reserved.</p>
+            <p>Backed by mentors from the University of Pennsylvania's Graduate School of Education</p>
+        </div>
+    </footer>
 </body>
 </html>
