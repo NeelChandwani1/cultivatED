@@ -8,15 +8,13 @@
     <title>CultivatED - SAT Prep for Students in Underserved Regions</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/globe.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 </head>
 <body>
     <div class="interactive-element"></div>
     
     <nav id="main-nav">
         <a href="#" class="logo">
-            <img src="assets/images/logo.png" alt="Logo" class="logo-img">
+            <img src="assets/images/logo.png" alt="CultivatED Logo" class="logo-image">
         </a>
         <div class="nav-links">
             <a href="#about" class="nav-link">ABOUT</a>
@@ -61,24 +59,16 @@
                     </div>
                     <div class="map-legend">
                         <div class="legend-item">
-                            <span class="legend-color" style="background-color: #4a7ba6"></span>
+                            <span class="legend-color" style="background-color: #ff6b6b"></span>
                             <span>Limited Access</span>
                         </div>
                         <div class="legend-item">
-                            <span class="legend-color" style="background-color: #5f97c7"></span>
+                            <span class="legend-color" style="background-color: #ffa557"></span>
                             <span>Below Average</span>
                         </div>
                         <div class="legend-item">
-                            <span class="legend-color" style="background-color: #7dbde8"></span>
-                            <span>Average</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="legend-color" style="background-color: #9fd8ff"></span>
-                            <span>Good</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="legend-color" style="background-color: #c7eeff"></span>
-                            <span>Excellent</span>
+                            <span class="legend-color" style="background-color: #ffd93d"></span>
+                            <span>Average Access</span>
                         </div>
                     </div>
                     <p class="map-note">* Data represents estimated access to quality SAT preparation resources by country</p>
@@ -95,36 +85,35 @@
                 <div class="contact-grid">
                     <div class="contact-info-wrapper">
                         <div class="contact-info">
-                            <div class="contact-card">
-                                <div class="contact-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                        <polyline points="22,6 12,13 2,6"></polyline>
-                                    </svg>
+                            <div class="contact-details">
+                                <div class="contact-section">
+                                    <div class="contact-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                        <a href="mailto:olisanw@seas.upenn.edu" class="contact-link">olisanw@seas.upenn.edu</a>
+                                    </div>
                                 </div>
-                                <h3>Email Us</h3>
-                                <a href="mailto:hello@cultivated.org" class="contact-link">hello@cultivated.org</a>
-                            </div>
-                            
-                            <div class="contact-card">
-                                <div class="contact-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                    </svg>
+
+                                <div class="contact-section">
+                                    <div class="contact-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                        </svg>
+                                        <a href="tel:929-620-0471" class="contact-link">(929) 620-0471</a>
+                                    </div>
                                 </div>
-                                <h3>Call Us</h3>
-                                <a href="tel:+11234567890" class="contact-link">+1 (123) 456-7890</a>
-                            </div>
-                            
-                            <div class="contact-card">
-                                <div class="contact-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                    </svg>
+
+                                <div class="contact-section">
+                                    <div class="contact-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                        <address class="contact-address">3820 Locust Walk</address>
+                                    </div>
                                 </div>
-                                <h3>Visit Us</h3>
-                                <p>123 Education Ave<br>San Francisco, CA 94103</p>
                             </div>
                             
                             <div class="social-links">
@@ -221,7 +210,6 @@
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="assets/images/logo.png" alt="CultivatED Logo" class="footer-logo-img">
-                <span>CultivatED</span>
             </div>
             <div class="footer-links">
                 <div class="footer-links-column">

@@ -166,4 +166,5 @@
     background: rgba(10, 10, 10, 0.5);
     border-radius: 12px;
     backdrop-filter: blur(10px);
+    overflow: hidden;
 }
