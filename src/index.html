@@ -8,6 +8,8 @@
     <title>CultivatED - SAT Prep for Students in Underserved Regions</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/globe.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
 </head>
 <body>
     <div class="interactive-element"></div>
@@ -54,7 +56,9 @@
                 </div>
                 <div class="map-content">
                     <h2>Global SAT Prep Access</h2>
-                    <div id="map-container" style="width: 100%; height: 400px;"></div>
+                    <div id="map-container" class="globe-container">
+                        <canvas id="globeCanvas"></canvas>
+                    </div>
                     <div class="map-legend">
                         <div class="legend-item">
                             <span class="legend-color" style="background-color: #4a7ba6"></span>
